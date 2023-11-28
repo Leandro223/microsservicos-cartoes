@@ -1,3 +1,14 @@
+Funcionalidades Específicas
+
+Cadastro de Cliente
+O microserviço oferece a capacidade de cadastrar novos clientes de forma eficiente e segura. Utilizando endpoints específicos, é possível enviar as informações necessárias para o registro do cliente.
+
+Avaliação de Crédito
+Avaliar o crédito de um cliente é uma funcionalidade integrada que analisa as informações cadastradas, determinando a elegibilidade do cliente para serviços financeiros. 
+
+Emissão de Cartão
+A emissão do cartão é automatizada com base nas avaliações de crédito. Quando um cliente é aprovado, a emissão do cartão é enfileirada no RabbitMQ, garantindo um processamento ordenado e confiável. O microserviço de emissão de cartão consome essa fila, gerando os cartões conforme a ordem de chegada e notificando os sistemas relevantes.
+
 Spring Cloud/Boot
 Este microserviço é desenvolvido utilizando os módulos fornecidos pelo ecossistema Spring Cloud/Boot. Esses módulos são essenciais para a construção de uma arquitetura de microservices robusta e escalável.
 
